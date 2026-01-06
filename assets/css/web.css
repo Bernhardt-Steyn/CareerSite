@@ -703,8 +703,9 @@ input, select, textarea {
 		}
 
 		.image img {
-			border-radius: 4px;
 			display: block;
+			border: 5px solid transparent;
+			outline: none;
 		}
 
 		.image.left, .image.right {
@@ -739,7 +740,6 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 2.5rem 0;
 			width: 100%;
 		}
 
@@ -938,6 +938,12 @@ input, select, textarea {
 
 /* Icons */
 
+	a {
+		text-decoration: none;
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+	}
 	ul.icons {
 		cursor: default;
 		list-style: none;
@@ -1340,9 +1346,22 @@ input, select, textarea {
 			border: solid 1px #ffffff;
 			border-radius: 100%;
 		}
-
+		
 			#header .logo .icon:before {
 				font-size: 2rem;
+			}
+		
+		.logof {
+			width: 7.0rem;
+			height: 5.5rem;
+			line-height: 5.5rem;
+			border: 5px solid transparent;
+			outline: none;
+			box-shadow: none;
+		}
+			#footer .logo .icon:before {
+				font-size: 2rem;
+				outline: none;
 			}
 
 		#header .content {
